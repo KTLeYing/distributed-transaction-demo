@@ -1,0 +1,28 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: payment-service
+
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 105293
+    url: jdbc:mysql://localhost:3306/java_stack_study?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+
+# mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath*:com/mzl/commonservice/**/mapper/xml/*.xml
+  type-aliases-package: com.mzl.commonservice.**.entity
+  # MyBatis原生支持的配置
+  configuration:
+    # 是否开启自动驼峰命名规则映射
+    mapUnderscoreToCamelCase: true
+    # 在控制台打印SQL命令并打印执行结果
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 在控制台打印SQL命令不打印结果
+    # log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+
