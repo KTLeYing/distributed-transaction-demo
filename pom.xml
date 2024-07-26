@@ -24,6 +24,7 @@
         <module>order-service</module>
         <module>payment-service</module>
         <module>inventory-service</module>
+        <module>user-service</module>
         <module>common-service</module>
     </modules>
 
@@ -68,13 +69,6 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
-            <scope>provided</scope>
         </dependency>
 
     </dependencies>

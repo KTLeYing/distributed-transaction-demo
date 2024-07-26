@@ -15,7 +15,6 @@
     <name>payment-service</name>
     <description>payment-service</description>
 
-
     <dependencies>
         <!--引入公共模块依赖-->
         <dependency>
