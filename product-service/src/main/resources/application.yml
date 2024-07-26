@@ -1,0 +1,27 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: product-service
+
+  # ?????
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    # password: 105293
+    password: 88888888
+    url: jdbc:mysql://localhost:3306/java_stack_study?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+
+# mybatis-plus??
+mybatis-plus:
+  mapper-locations: classpath*:com/mzl/commonservice/**/mapper/xml/*.xml
+  type-aliases-package: com.mzl.commonservice.**.entity
+  # MyBatis???????
+  configuration:
+    # ??????????????
+    mapUnderscoreToCamelCase: true
+    # ??????SQL?????????
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # ??????SQL???????
+    # log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
